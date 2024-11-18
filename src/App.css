@@ -1,0 +1,525 @@
+/*!* Reset Styles *!*/
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*html, body, #root {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    overflow: hidden; !* Prevent unwanted scrollbars *!*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*}*/
+
+/*body {*/
+/*    background: linear-gradient(135deg, #f0f9ff 0%, #cbebff 100%);*/
+/*    color: #333;*/
+/*}*/
+
+/*.app-container {*/
+/*    !*display: flex;*!*/
+/*    !*flex-direction: column;*!*/
+/*    height: 100vh;*/
+/*    width: 100%;*/
+/*    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+/*    padding: 1rem;*/
+/*}*/
+
+/*!* Top Bar *!*/
+/*.top-bar {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 1rem;*/
+/*    background-color: #0066cc;*/
+/*    color: #fff;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+/*.user-info {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.user-info img {*/
+/*    border-radius: 50%;*/
+/*    margin-right: 10px;*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    border: 2px solid #fff;*/
+
+/*}*/
+
+/*.coin-balance {*/
+/*    display: flex; !* Align items horizontally *!*/
+/*    align-items: center; !* Align items vertically centered *!*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.coin-balance img {*/
+/*    margin-right: 8px; !* Add some space between the image and the text *!*/
+/*}*/
+
+/*!* Main Content *!*/
+/*.main-content {*/
+/*    flex: 1;*/
+/*    width: 100%;*/
+/*    padding: 1rem;*/
+/*    overflow-y: auto;*/
+/*    background-color: inherit;*/
+/*    margin-top: 1rem;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+/*    !*margin-bottom: 4rem;*!*/
+/*}*/
+
+/*.main-content h2 {*/
+/*    font-weight: 700;*/
+/*    font-size: 1.5rem;*/
+/*    color: #0066cc;*/
+/*    margin-bottom: 1rem;*/
+/*}*/
+
+/*!* Game Section *!*/
+/*.players-info {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    align-items: center;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.player {*/
+/*    text-align: center;*/
+/*}*/
+
+/*.player .avatar {*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*    border-radius: 50%;*/
+/*    border: 2px solid #0088cc;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.vs {*/
+/*    font-size: 1.5rem;*/
+/*    font-weight: bold;*/
+/*    color: #333;*/
+/*}*/
+
+/*.choice-buttons {*/
+/*    margin-top: 20px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.choice-buttons p {*/
+/*    margin-bottom: 10px;*/
+/*    font-size: 1.1rem;*/
+/*}*/
+
+/*.buttons-container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    gap: 20px;*/
+/*}*/
+
+/*.choice-buttons button {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    padding: 10px;*/
+/*    font-size: 1rem;*/
+/*    border: none;*/
+/*    border-radius: 10px;*/
+/*    cursor: pointer;*/
+/*    background-color: #0088cc;*/
+/*    color: #fff;*/
+/*    transition: background-color 0.3s, transform 0.3s;*/
+/*    width: 120px;*/
+/*}*/
+
+/*.choice-buttons button:hover {*/
+/*    background-color: #0077b3;*/
+/*    transform: scale(1.05);*/
+/*}*/
+
+/*.choice-buttons button img {*/
+/*    width: 60px;*/
+/*    height: 60px;*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.coin-flip-container {*/
+/*    text-align: center;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*.coin-flip {*/
+/*    display: inline-block;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.coin {*/
+/*    width: 120px;*/
+/*    height: 120px;*/
+/*    position: relative;*/
+/*    perspective: 1000px;*/
+/*}*/
+
+/*.coin-face {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    backface-visibility: hidden;*/
+/*}*/
+
+/*.coin-face img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*.coin-face.heads {*/
+/*    transform: rotateY(0deg);*/
+/*}*/
+
+/*.coin-face.tails {*/
+/*    transform: rotateY(180deg);*/
+/*}*/
+
+/*.coin.flipping .coin-face {*/
+/*    animation: flip 2s ease-in-out;*/
+/*}*/
+
+/*@keyframes flip {*/
+/*    from {*/
+/*        transform: rotateY(0deg);*/
+/*    }*/
+/*    to {*/
+/*        transform: rotateY(1080deg);*/
+/*    }*/
+/*}*/
+
+/*.game-result {*/
+/*    font-size: 1.2rem;*/
+/*    font-weight: bold;*/
+/*    margin: 10px 0;*/
+/*}*/
+
+/*.game-result p {*/
+/*    font-size: 1.2rem;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.result-icon {*/
+/*    font-size: 2rem;*/
+/*    vertical-align: middle;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*.win {*/
+/*    color: #2ecc71;*/
+/*}*/
+
+/*.lose {*/
+/*    color: #e74c3c;*/
+/*}*/
+
+/*!* Bottom Navigation Menu *!*/
+/*.bottom-menu {*/
+/*    flex-shrink: 0;*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    padding: 1rem;*/
+/*    background-color: #fff;*/
+/*    border-top: 1px solid #ddd;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*.bottom-menu button {*/
+/*    flex: 1;*/
+/*    padding: 1rem;*/
+/*    font-size: 1rem;*/
+/*    border: none;*/
+/*    background: none;*/
+/*    cursor: pointer;*/
+/*    color: #333;*/
+/*    font-weight: 500;*/
+/*    transition: color 0.3s, font-weight 0.3s;*/
+/*}*/
+
+/*.bottom-menu button.active {*/
+/*    color: #0066cc;*/
+/*    font-weight: 700;*/
+/*}*/
+
+/*!* Hover effect for Bottom Menu *!*/
+/*.bottom-menu button:hover {*/
+/*    color: #0088cc;*/
+/*}*/
+
+/*!* Responsive Design *!*/
+/*@media (max-width: 600px) {*/
+/*    .main-content {*/
+/*        padding: 1rem;*/
+/*    }*/
+
+/*    .bottom-menu button {*/
+/*        font-size: 0.875rem;*/
+/*    }*/
+
+/*    .top-bar {*/
+/*        flex-direction: column;*/
+/*        align-items: flex-start;*/
+/*    }*/
+
+/*    .coin-balance {*/
+/*        margin-top: 0.5rem;*/
+/*    }*/
+
+/*    .players-info {*/
+/*        !*flex-direction: column;*!*/
+/*        display: flex;*/
+/*        justify-content: space-around;*/
+/*        align-items: center;*/
+/*        margin-bottom: 20px;*/
+/*    }*/
+
+/*    .vs {*/
+/*        margin: 10px 0;*/
+/*    }*/
+
+/*    .buttons-container {*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*    }*/
+
+/*    .choice-buttons button {*/
+/*        width: 80%;*/
+/*        margin-bottom: 10px;*/
+/*    }*/
+
+/*    .coin {*/
+/*        width: 80px;*/
+/*        height: 80px;*/
+/*    }*/
+/*}*/
+
+/*!* Leaderboard Table *!*/
+/*.leaderboard-section {*/
+/*    margin-top: 1rem;*/
+/*}*/
+
+/*table {*/
+/*    width: 100%;*/
+/*    border-collapse: collapse;*/
+/*    background-color: #ffffff;*/
+/*    margin-top: 1rem;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*table th, table td {*/
+/*    padding: 0.75rem;*/
+/*    border: 1px solid #ddd;*/
+/*    text-align: left;*/
+/*    font-weight: 500;*/
+/*}*/
+
+/*table th {*/
+/*    background-color: #f2f2f2;*/
+/*    font-weight: bold;*/
+/*    font-size: 1rem;*/
+/*}*/
+
+/*table td {*/
+/*    font-size: 0.95rem;*/
+/*    color: #333;*/
+/*}*/
+
+/*table tr:nth-child(even) {*/
+/*    background-color: #f9f9f9;*/
+/*}*/
+
+/*table tr:hover {*/
+/*    background-color: #f1f1f1;*/
+/*}*/
+
+/*!* Other Styles *!*/
+/*.game-section p, .tasks-section p, .account-section p {*/
+/*    font-size: 1rem;*/
+/*    line-height: 1.5;*/
+/*}*/
+
+/*.vs {*/
+/*    text-align: center;*/
+/*}*/
+
+/*.vs p {*/
+/*    margin: 5px 0;*/
+/*    font-weight: bold;*/
+/*    font-size: 1rem;*/
+/*    color: #333;*/
+/*}*/
+
+/*.score {*/
+/*    font-size: 1rem;*/
+/*    font-weight: bold;*/
+/*    margin-top: 5px;*/
+/*}*/
+
+/*.coin-flip {*/
+/*    display: inline-block;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.coin {*/
+/*    width: 120px;*/
+/*    height: 120px;*/
+/*    position: relative;*/
+/*    perspective: 1000px;*/
+/*}*/
+
+/*.coin-face {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    backface-visibility: hidden;*/
+/*}*/
+
+/*.coin-face img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*.coin-face.heads {*/
+/*    transform: rotateY(0deg);*/
+/*}*/
+
+/*.coin-face.tails {*/
+/*    transform: rotateY(180deg);*/
+/*}*/
+
+/*.coin.flipping .coin-face {*/
+/*    animation: flip 1s ease-in-out;*/
+/*}*/
+
+/*!* Prediction Section *!*/
+/*.prediction-section {*/
+/*    background-color: #f0f9ff; !* Slightly lighter blue to match the gradient background *!*/
+/*    padding: 20px;*/
+/*    border-radius: 10px;*/
+/*    text-align: center;*/
+/*    margin-bottom: 20px; !* Adds space between sections *!*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); !* Subtle shadow for emphasis *!*/
+/*}*/
+
+/*.prediction-title {*/
+/*    font-size: 1.5rem;*/
+/*    font-weight: 700;*/
+/*    color: #0066cc;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.prediction-description {*/
+/*    font-size: 1.2rem;*/
+/*    color: #666;*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+/*.prediction-input-container {*/
+/*    display: flex;*/
+/*    flex-direction: row; !* Default to row layout *!*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    gap: 15px; !* Increase gap for better spacing *!*/
+/*    margin-top: 20px;*/
+/*    flex-wrap: wrap; !* Allow wrapping on smaller screens *!*/
+/*}*/
+
+
+/*.prediction-input {*/
+/*    padding: 12px;*/
+/*    font-size: 1rem;*/
+/*    border-radius: 8px;*/
+/*    border: 1px solid #ccc;*/
+/*    flex: 1; !* Allow the input to grow *!*/
+/*    min-width: 150px;*/
+/*    max-width: 200px;*/
+/*    text-align: center;*/
+/*    background-color: #fff;*/
+/*    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);*/
+/*    transition: border-color 0.3s;*/
+/*}*/
+
+/*.prediction-submit-btn {*/
+/*    background-color: #0088cc;*/
+/*    color: #fff;*/
+/*    padding: 12px 20px;*/
+/*    border-radius: 8px;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*    font-size: 1rem;*/
+/*    font-weight: bold;*/
+/*    transition: background-color 0.3s, transform 0.3s;*/
+/*}*/
+
+
+/*.prediction-input:focus {*/
+/*    border-color: #0066cc;*/
+/*    outline: none;*/
+/*}*/
+
+/*.prediction-submit-btn:hover {*/
+/*    background-color: #0066cc;*/
+/*    transform: translateY(-2px);*/
+/*}*/
+
+
+/*!* Responsive Adjustments *!*/
+/*@media (max-width: 600px) {*/
+/*    .prediction-section {*/
+/*        padding: 15px;*/
+/*        margin-top: 15px;*/
+/*    }*/
+
+/*    .prediction-title {*/
+/*        font-size: 1.3rem;*/
+/*    }*/
+
+/*    .prediction-description {*/
+/*        font-size: 1rem;*/
+/*    }*/
+
+/*    .prediction-input-container {*/
+/*        flex-direction: column; !* Stack vertically *!*/
+/*        align-items: center;*/
+/*        gap: 15px;*/
+/*    }*/
+
+/*    .prediction-input, .prediction-submit-btn {*/
+/*        width: 100%;*/
+/*        max-width: none; !* Remove max-width restriction *!*/
+/*    }*/
+
+/*    .prediction-input {*/
+/*        margin-bottom: 10px; !* Add space below input *!*/
+/*    }*/
+/*}*/
+
+
+/*@keyframes flip {*/
+/*    0% {*/
+/*        transform: rotateY(0deg);*/
+/*    }*/
+/*    50% {*/
+/*        transform: rotateY(180deg);*/
+/*    }*/
+/*    100% {*/
+/*        transform: rotateY(360deg);*/
+/*    }*/
+/*}*/
